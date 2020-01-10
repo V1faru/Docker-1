@@ -1,0 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: amurtone <amurtone@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/10 11:48:08 by amurtone          #+#    #+#              #
+#    Updated: 2020/01/10 12:08:34 by amurtone         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+eval $(docker-machine env Char)
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# docker-machine env Char:                                                                                          amurtone@c2r6p3
+# export DOCKER_TLS_VERIFY="1"
+# export DOCKER_HOST="tcp://192.168.99.100:2376"
+# export DOCKER_CERT_PATH="/Users/amurtone/.docker/machine/machines/Char"
+# export DOCKER_MACHINE_NAME="Char"
+# Run this command to configure your shell:
+# eval $(docker-machine env Char)
+#------------------------------------------------------------------------------#
+# to check the result:
+# docker-machine ls
+# under the 'ACTIVE' column there should now be a '*' instead of '-'
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#

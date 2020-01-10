@@ -1,0 +1,33 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: amurtone <amurtone@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/10 10:45:25 by amurtone          #+#    #+#              #
+#    Updated: 2020/01/10 11:45:24 by amurtone         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker-machine create --driver virtualbox Char
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# to install brew:
+# rm -rf $HOME/.brew && git clone --depth=1
+# https://github.com/Homebrew/brew $HOME/.brew && echo 'export
+# PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && source
+# $HOME/.zshrc && brew update
+#------------------------------------------------------------------------------#
+# creat symbolic link:
+# mv .docker goinfre/
+# ln -s goinfre/.docker .docker
+# repeat for virtualbox:
+# mv VirtualBox\ VMs goinfre/
+# ln -s goinfre/VirtualBox\ VMs VirtualBox\ VMs
+#------------------------------------------------------------------------------#
+# https://docs.docker.com/machine/reference/create/
+#------------------------------------------------------------------------------#
+# to check result:
+# docker-machine ls
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
