@@ -1,0 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    09                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: Andreas <Andreas@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/11 10:22:42 by Andreas           #+#    #+#              #
+#    Updated: 2020/01/11 10:35:03 by Andreas          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+apt-get update 
+apt-get upgrade -y
+aot get install build-essential git
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# start debian container:
+# docker run -ti --rm debian
+#------------------------------------------------------------------------------#
+# build-essential contains a list of packages that are essential for building
+# ubuntu packages including gcc compliler, make and other tools
+# https://help.ubuntu.com/community/InstallingCompilers
+#------------------------------------------------------------------------------#
+# git:
+# https://git-scm.com/download/linux
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
