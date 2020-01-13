@@ -6,14 +6,14 @@
 #    By: Andreas <Andreas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/11 12:34:54 by Andreas           #+#    #+#              #
-#    Updated: 2020/01/11 16:59:10 by Andreas          ###   ########.fr        #
+#    Updated: 2020/01/13 17:12:49 by Andreas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 docker run -d --name spawning-pool --restart=on-failure:10 \
 -e MYSQL_ROOT_PASSWORD=KERRIGAN -e MYSQL_DATABASE=zerglings \
 -v hatchery:/var/lib/mysql mysql \
---default-authentication-plugin=mysql_native_password -p
+--default-authentication-plugin=mysql_native_password
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 # docker run --help:
