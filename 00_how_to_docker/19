@@ -1,0 +1,34 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    19                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: Andreas <Andreas@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/14 13:06:53 by Andreas           #+#    #+#              #
+#    Updated: 2020/01/14 13:46:25 by Andreas          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker run --name Abathur -v ~/:/root -p 3000:3000 -dit python:2-slim
+docker exec Abathur pip install Flask
+echo 'from flask import Flask\napp = Flask(__name__)\n@app.route("/")\ndef hello_world():\n\treturn "<h1>Hello, World!</h1>"' > ~/app.py
+docker exec -e FLASK_APP=/root/app.py Abathur flask run --host=0.0.0.0 --port 3000
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# note: execute line by line not by bash. otherwise get a syntax error.
+#
+# https://docs.docker.com/engine/reference/commandline/exec/
+# The docker exec command runs a new command in a running container.
+#------------------------------------------------------------------------------#
+# flask : https://flask.palletsprojects.com/en/1.0.x/quickstart/
+#------------------------------------------------------------------------------#
+# to check result:
+# ip-de-char:3000 or
+# curl $(docker-machine ip Char):3000
+# curl is a tool to transfer data from or to a server, using one of the 
+# supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, 
+# LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, 
+# TELNET and TFTP). The command is designed to work without user interaction.
+# man curl
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#

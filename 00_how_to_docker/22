@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    22                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: Andreas <Andreas@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/14 14:39:25 by Andreas           #+#    #+#              #
+#    Updated: 2020/01/14 15:54:36 by Andreas          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker-machine ssh Aiur "docker swarm \
+join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377"
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# https://docs.docker.com/engine/swarm/join-nodes/
+# To login, just run docker-machine ssh machinename.
+# join as worker node:
+# To retrieve the join command including the join token for worker nodes, 
+# run the following command on a manager node:
+# docker swarm join-token worker
+# Run the command from the output on the worker to join the swarm:
+# to check run: docker node ls & docker info to check.
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+

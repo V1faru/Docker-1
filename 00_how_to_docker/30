@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    30                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: Andreas <Andreas@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/14 16:20:38 by Andreas           #+#    #+#              #
+#    Updated: 2020/01/14 16:29:09 by Andreas          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker service scale -d marines=20
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# docker service:
+# scale — Scale one or multiple replicated services.
+# https://docs.docker.com/engine/reference/commandline/service_scale/
+# check logs:
+# docker service logs -f $(docker service ps marines -f "name=marines.11" -q)
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#

@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    20                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: Andreas <Andreas@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/01/14 14:27:03 by Andreas           #+#    #+#              #
+#    Updated: 2020/01/14 14:38:11 by Andreas          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker swarm init --advertise-addr $(docker-machine ip Char)
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+# To add a worker to this swarm, run the following command:
+# docker swarm join --token
+# SWMTKN-1-10kkc9meoce2x6ztkiocusmaj5l1xlrssxla7w0wx9cl4hmw6y-9alc0z7xlwsxid4t2xm8f5sya 192.168.99.101:2377
+# To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
