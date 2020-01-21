@@ -6,13 +6,13 @@
 #    By: amurtone <amurtone@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/14 17:59:02 by amurtone          #+#    #+#              #
-     Updated: 2020/01/21 09:26:22 by amurtone         ###   ########.fr         
+#    Updated: 2020/01/14 17:59:06 by amurtone         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 apt-get update 
 apt-get upgrade -y
-apt-get install build-essential git
+aot get install build-essential git
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 # start debian container:
