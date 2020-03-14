@@ -1,2 +1,2 @@
 # Docker-1
-docker-1 is a School 42 Docker project.
+docker-1 is a Hive Helsinki project (42 cursus).
